@@ -20,6 +20,12 @@ For Conda users, you can create a new Conda environment using
 conda env create -f environment.yml
 ```
 
+## Download Dataset
+
+Please download all the datasets from [OneDrive](https://entuedu-my.sharepoint.com/:f:/g/personal/yyu025_e_ntu_edu_sg/EmZ1HCaxrEJEkaRSwtKrI_sBnZpuwcu4Pq-tT0mvFMu0VQ?e=QqpbFq) just for convenience, or you can refer to the following websites:
+- [Cityscapes](https://www.cityscapes-dataset.com/)
+- [GTA5](https://download.visinf.tu-darmstadt.de/data/from_games/)
+
 ## Citation
 
 Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks.<br>
