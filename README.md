@@ -9,9 +9,16 @@ git clone --recursive https://github.com/YuYue525/AI6121_project.git
 cd AI6121_project/cyclegan
 ```
 
-- Install [PyTorch](http://pytorch.org) and 0.4+ and other dependencies (e.g., torchvision, [visdom](https://github.com/facebookresearch/visdom) and [dominate](https://github.com/Knio/dominate)).
-  - For pip users, please type the command `pip install -r requirements.txt`.
-  - For Conda users, you can create a new Conda environment using `conda env create -f environment.yml`.
+## Environment Initialization
+
+For pip users, please type the command
+```bash
+pip install -r requirements.txt
+```
+For Conda users, you can create a new Conda environment using 
+```bash
+conda env create -f environment.yml
+```
 
 ## Citation
 
