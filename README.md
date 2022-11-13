@@ -1,5 +1,7 @@
 # AI6121_project
 
+The project uses PyTorch implementations of CycleGAN to achieve semantic segmentation and input space unsupervised domain adaptation for the course project AI6121. 
+
 ## Citation
 
 Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks.<br>
