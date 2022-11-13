@@ -1,6 +1,6 @@
 # AI6121_project
 
-##Citation
+## Citation
 
 Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks.<br>
 [Jun-Yan Zhu](https://www.cs.cmu.edu/~junyanz/)\*,  [Taesung Park](https://taesung.me/)\*, [Phillip Isola](https://people.eecs.berkeley.edu/~isola/), [Alexei A. Efros](https://people.eecs.berkeley.edu/~efros). In ICCV 2017. (* equal contributions) [[Bibtex]](https://junyanz.github.io/CycleGAN/CycleGAN.txt)
