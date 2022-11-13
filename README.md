@@ -5,8 +5,7 @@ The project uses PyTorch implementations of CycleGAN to achieve semantic segment
 Please use the following command to clone this repo:
 
 ```bash
-git clone https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
-cd pytorch-CycleGAN-and-pix2pix
+git clone --recursive https://github.com/YuYue525/AI6121_project.git
 ```
 
 ## Citation
