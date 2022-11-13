@@ -2,6 +2,13 @@
 
 The project uses PyTorch implementations of CycleGAN to achieve semantic segmentation and input space unsupervised domain adaptation for the course project AI6121. 
 
+Please use the following command to clone this repo:
+
+```bash
+git clone https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
+cd pytorch-CycleGAN-and-pix2pix
+```
+
 ## Citation
 
 Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks.<br>
