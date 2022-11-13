@@ -6,7 +6,7 @@ Please use the following command to clone this repo:
 
 ```bash
 git clone --recursive https://github.com/YuYue525/AI6121_project.git
-cd AI6121_project
+cd AI6121_project/cyclegan
 ```
 
 - Install [PyTorch](http://pytorch.org) and 0.4+ and other dependencies (e.g., torchvision, [visdom](https://github.com/facebookresearch/visdom) and [dominate](https://github.com/Knio/dominate)).
