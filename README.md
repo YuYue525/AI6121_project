@@ -50,7 +50,78 @@ Or you can use unzip_datasets.sh:
 bash unzip_datasets.sh
 ```
 
-## Training CycleGAN
+## Model Training/Testinng
+
+Under the folder `AI6121_project`, to train a CycleGAN on GTA5 dataset to its label dataset:
+```bash
+# cd AI6121_project
+mkdir cyclegan/datasets/gta5
+cp GTA5_images cyclegan/datasets/gta5/trainA
+cp GTA5_labels cyclegan/datasets/gta5/trainB
+python cyclegan/train.py --dataroot ./cyclegan/datasets/gta5 --name gta5 --model cycle_gan --display_id -1
+```
+Or you can use train_gta5.sh:
+
+```bash
+# cd AI6121_project
+bash train_gta5.sh
+```
+
+To test on Cityscapes dataset:
+```bash
+# cd AI6121_project
+mkdir cyclegan/datasets/gta5/testA
+cp Cityscapes_images/*/*/*/*.png cyclegan/datasets/gta5/testA/
+cp cyclegan/checkpoints/gta5/latest_net_G_A.pth cyclegan/checkpoints/gta5/latest_net_G.pth 
+python test.py --dataroot datasets/gta5/testA --name gta5 --model test --no_dropout
+```
+
+Or you can use test_gta5.sh:
+
+```bash
+# cd AI6121_project
+bash test_gta5.sh
+```
+The generated results are under `./cyclegan/results/`.
+
+To validate other datasets, please replace the images under the folder `cyclegan/datasets/gta5/testA` and run the same command as above. Similarly, to train the other CycleGAN model by using different datasets, please create the folder `cyclegan/datasets/[your test]` and move the datasets to `cyclegan/datasets/[your test]/trainA` and `cyclegan/datasets/[your test]/trainB`. Another UDA example:
+
+
+Under the folder `AI6121_project`, to train a CycleGAN on GTA5 dataset to Cityscapes style:
+```bash
+# cd AI6121_project
+mkdir cyclegan/datasets/gta52cityscapes
+cp GTA5_images cyclegan/datasets/gta52scapes/trainA
+cp Cityscapes_images/*/*/*/*.png cyclegan/datasets/gta52scapes/trainB/
+python cyclegan/train.py --dataroot ./cyclegan/datasets/gta52scapes --name gta52scapes --model cycle_gan --display_id -1
+```
+
+Or you can use train_gta52cityscapes.sh:
+
+```bash
+# cd AI6121_project
+bash train_gta52cityscapes.sh
+```
+
+To test on GTA5 dataset:
+```bash
+# cd AI6121_project
+mkdir cyclegan/datasets/gta52cityscapes/testA
+cp cyclegan/datasets/gta52cityscapes/trainA cyclegan/datasets/gta52cityscapes/testA
+cp cyclegan/checkpoints/gta52cityscapes/latest_net_G_A.pth cyclegan/checkpoints/gta52cityscapes/latest_net_G.pth 
+python test.py --dataroot datasets/gta52cityscapes/testA --name gta52cityscapes --model test --no_dropout
+```
+
+Or you can use test_gta52cityscapes.sh:
+
+```bash
+# cd AI6121_project
+bash test_gta52cityscapes.sh
+```
+The generated results are under `./cyclegan/results/`.
+
+Similar to other experiments, please read our project report for more information.
+
 
 ## Citation
 
